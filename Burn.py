@@ -1,26 +1,21 @@
-import deck as newdeck
 import random as rand
+import newDeck
 
-deck = newdeck.listDeck
-userHand = {}
-cpuHand = {}
-userFieldUp = {}
-cpuFieldUp = {}
-userFieldDown = {}
-cpuFieldDown = {}
+def deal():
+    deck = newDeck.listDeck()
+    deck.pop()
+    deck.pop()
+    return deck
 
-fieldPile = {}
-# deal(user)
-# deal(cpu)
-# def deal(self):
-#     self.append
+playing = True
+while(playing):
+    deck = deal()
+    userHand = {}
+    cpuHand = {}
+    userFieldUp = {}
+    cpuFieldUp = {}
+    userFieldDown = {}
+    cpuFieldDown = {}
+    fieldPile = {}
 
-# print(len(deck))
-print(deck.pop())
-# print(len(deck))
-
-print(deck.pop())
-print(deck.pop())
-print(deck.pop())
-
-# TODO find way to make numbers match (S2 AND D2)
+    
